@@ -1,0 +1,49 @@
+.socialContainer{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+
+}
+.myLink{
+    display: flex;
+   
+    flex-direction: column;
+    align-items: center;
+    padding-left: 1200px;
+    z-index: 10;
+    max-width:1600px;
+    justify-content: center;
+   
+
+
+}
+@media screen and (max-width: 1250px) {
+    .myLink{
+        opacity: 0;
+      
+    }
+  }
+.myLink::before{
+    content: "";
+    width:2px;
+    height:50px;
+    background-color: var(--third-color);
+    margin-bottom: 10px;
+}
+
+.myLink > a {
+    
+    color: var(--second-color);
+    opacity: 60%;
+    padding: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.myLink > a:hover {
+    transition: 0.3s ease-in-out;
+    color: var(--first-color);
+    opacity: 100%;
+    transform: scale(1.1);
+
+}
